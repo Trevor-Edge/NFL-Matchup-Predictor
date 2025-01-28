@@ -1,0 +1,141 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, #0b3d91, #ffffff, #d71920); /* Football-themed gradient (NFL logo colors) */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    background-color: #0b3d91;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #0b3d91;
+    margin: 10px 0;
+}
+
+/* League rows */
+.league-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    margin-bottom: 20px;
+}
+
+/* Divisions */
+.division {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%; /* Slightly less than 25% to leave space between columns */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.division:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Team logos */
+.team-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.team-logos img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+/* Hover effect for logos */
+.team-logos img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #d71920; /* NFL red color */
+    cursor: pointer;
+}
+
+/* Selected logo styling */
+.team-logos img.selected {
+    border: 3px solid #2e8b57; /* Green to indicate selection */
+}
+
+/* Output container */
+#output-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Output message */
+#output-container p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-top: 2px solid #d71920;
+    border-bottom: 2px solid #0b3d91;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* Footer message or extra details */
+#output-container span {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* General responsiveness */
+@media (max-width: 768px) {
+    .league-row {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .division {
+        width: 90%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
