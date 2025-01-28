@@ -1,4 +1,4 @@
-# NFL Game Predictor
+# NFL Matchup Predictor
 
 According to this model, the Eagles will be winning Super Bowl LIX, but how can you bet against the Chiefs???:) This project spins up an interactive web application that predicts NFL game outcomes using machine learning. The system analyzes historical play-by-play data and runs 10,000 simulations to generate win predictions for any two NFL teams.
 
@@ -36,7 +36,7 @@ According to this model, the Eagles will be winning Super Bowl LIX, but how can 
 
 git clone [https://github.com/Trevor-Edge/NFL-Matchup-Predictor.git]
 
-cd nfl-game-predictor
+cd NFL-Matchup-Predictor
 
 2. Install required Python packages:
 
@@ -66,7 +66,7 @@ static/
 
 ## Project Structure
 
-nfl-game-predictor/
+NFL-Matchup-Predictor/
 
 ├── app.py                 # Flask application main file
 
@@ -116,10 +116,15 @@ flask run
    - Calculates final win probabilities
 
 ## Model Performance
-The model's predictions are based on 2022-2024 season data and have shown promising results. In a recent test (Week 12), the model correctly predicted 8 out of 13 game outcomes with just 4 simple statistics.
+
+The model's predictions are based on 2022-2024 season data and have shown promising results. In a recent test (Week 12), the model correctly predicted 8 out of 13 game outcomes correctly with just 4 simple statistics.
+
+Week 12 was a tough one as the 49ers were without starting QB Brock Purdy and the Browns/Steelers game was played in the SNOW! These were two of five incorrect predictions but looking towards the future, updates will be made making more model improvements such as including more relevant features, testing different models, and more!
 
 ## Contributing
+
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgments
+
 - NFL data provided by nfl_data_py
