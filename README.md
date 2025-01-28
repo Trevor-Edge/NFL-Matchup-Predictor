@@ -40,7 +40,7 @@ cd nfl-game-predictor
 
 2. Install required Python packages:
 
-pip install flask pandas numpy torch scikit-learn nfl_data_py
+pip install -r requirements.txt
 
 3. Ensure all team logos are in the correct directories under `static/`:
 
@@ -52,10 +52,15 @@ static/
 
 ├── AFC_East/
 ├── AFC_West/
+
 ├── NFC_North/
+
 ├── NFC_South/
+
 ├── NFC_East/
+
 ├── NFC_West/
+
 └── style.css
 
 ## Project Structure
