@@ -88,7 +88,7 @@ nfl-game-predictor/
 
 1. Start the Flask server:
 
-python app.py
+flask run
 
 2. Open your web browser and navigate to `http://localhost:5000`
 
