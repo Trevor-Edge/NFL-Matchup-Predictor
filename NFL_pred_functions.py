@@ -225,7 +225,6 @@ def predict_winner(model, scaler, team1_stats, team2_stats):
 
     return int(predicted_class)
 
-
 def game_output_generation(team1, team2, num_simulations=10000):
 
     #using get_data function to grab relevant data
@@ -313,30 +312,3 @@ def game_output_generation(team1, team2, num_simulations=10000):
     }
 
     return simulation_results, team_results_dict
-
-team1 = 'KC'
-team2 = 'CAR'
-simulated_games, team_results_dict = game_output_generation(team1, team2)
-KC_games = (sum(simulated_games)/10000)*100
-CAR_games = ((10000-sum(simulated_games))/10000)*100
-KC_games
-CAR_games
-
-
-### UPCOMING WEEK 12 GAMES ###
-
-# Steelers vs Browns = predicted winner: Steelers win (67.8% to 32.2%) - Wrong
-# Buccaneers vs Giants = predicted winner: Buccs win (57.9% to 42.1% - close matchup) - Right
-# Chiefs vs Panthers = predicted winner: Chiefs win (69.5% to 30.5%) - Right
-# Cowboys vs Commanders = predicted winner: Commanders win (83.3% to 16.2%) - Wrong
-# Patriots vs Dolphins = predicted winner: Dolphins win (63.4% to 36.6%) - Right
-# Titans vs Texans = predicted winner: Texans win (61.3% to 38.7%) - Wrong
-# Lions vs Colts = predicted winner: Lions win (75.5% to 24.5%) - Right
-# Vikings vs Bears = predicted winner: Vikings win (55.1% to 44.9% - close matchup) - Right
-# Broncos vs Raiders = predicted winner: Broncos win (59.7% to 40.3% - close matchup) - Right
-# 49ers vs Packers = predicted winner: 49ers win (60.2% to 39.8%) - Wrong
-# Cardinals vs Seahawks = predicted winner: Cardinals win (64.0% to 36.0%) - Wrong
-# Eagles vs Rams = predicted winner:  Eagles win (83.3% to 16.7%) - Right
-# Ravens vs Chargers = predicted winner: Ravens win (65.5% to 34.5%) - Right
-
-## 13 games - 8/13 Right, 5/13 Wrong ## 
