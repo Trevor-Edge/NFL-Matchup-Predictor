@@ -110,32 +110,16 @@ flask run
    - Features include passing yards, rushing yards, turnovers, and takeaways
 
 3. **Prediction Process:**
-   - Runs 10,000 Monte Carlo simulations
+   - Runs 10,000 simulations sampling from historical game data distributions for each statistic (passing yards, rushing yards, turnovers, takeaways)
    - Generates random normal distributions based on team statistics
    - Predicts winner for each simulation
    - Calculates final win probabilities
 
 ## Model Performance
-
-The model's predictions are based on current season data and have shown promising results. In a recent test (Week 12), the model correctly predicted 8 out of 13 game outcomes.
+The model's predictions are based on 2022-2024 season data and have shown promising results. In a recent test (Week 12), the model correctly predicted 8 out of 13 game outcomes with just 4 simple statistics.
 
 ## Contributing
-
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-[Add your license information here]
-
 ## Acknowledgments
-
 - NFL data provided by nfl_data_py
-- Team logos are property of the NFL and its teams
-
-## Support
-
-For support, please open an issue in the repository or contact [your contact information].
-
-## Disclaimer
-
-This project is for educational purposes only. Game predictions should not be used for gambling purposes. All team logos and NFL-related marks are trademarks of the NFL and its teams.
