@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NFL Game Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>NFL Matchup Prediction: Select Two Teams</h1>
+
+    <div class="league-row">
+        <!-- AFC Divisions -->
+        <div class="division">
+            <h2>AFC North</h2>
+            <div class="team-logos">
+                <img src="{{ url_for('static', filename='AFC_North/ravens.png') }}" alt="Ravens" data-team="BAL" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_North/steelers.png') }}" alt="Steelers" data-team="PIT" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_North/bengals.png') }}" alt="Bengals" data-team="CIN" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_North/browns.png') }}" alt="Browns" data-team="CLE" onclick="selectTeam(this)">
+            </div>
+        </div>
+
+        <div class="division">
+            <h2>AFC South</h2>
+            <div class="team-logos">
+                <img src="{{ url_for('static', filename='AFC_South/colts.png') }}" alt="Colts" data-team="IND" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_South/jaguars.png') }}" alt="Jaguars" data-team="JAX" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_South/titans.png') }}" alt="Titans" data-team="TEN" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_South/texans.png') }}" alt="Texans" data-team="HOU" onclick="selectTeam(this)">
+            </div>
+        </div>
+
+        <div class="division">
+            <h2>AFC East</h2>
+            <div class="team-logos">
+                <img src="{{ url_for('static', filename='AFC_East/bills.png') }}" alt="Bills" data-team="BUF" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_East/dolphins.png') }}" alt="Dolphins" data-team="MIA" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_East/jets.png') }}" alt="Jets" data-team="NYJ" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_East/patriots.png') }}" alt="Patriots" data-team="NE" onclick="selectTeam(this)">
+            </div>
+        </div>
+
+        <div class="division">
+            <h2>AFC West</h2>
+            <div class="team-logos">
+                <img src="{{ url_for('static', filename='AFC_West/broncos.png') }}" alt="Broncos" data-team="DEN" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_West/chiefs.png') }}" alt="Chiefs" data-team="KC" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_West/chargers.png') }}" alt="Chargers" data-team="LAC" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='AFC_West/raiders.png') }}" alt="Raiders" data-team="LV" onclick="selectTeam(this)">
+            </div>
+        </div>
+    </div>
+
+    <div class="league-row">
+        <!-- NFC Divisions -->
+        <div class="division">
+            <h2>NFC North</h2>
+            <div class="team-logos">
+                <img src="{{ url_for('static', filename='NFC_North/bears.png') }}" alt="Bears" data-team="CHI" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_North/lions.png') }}" alt="Lions" data-team="DET" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_North/packers.png') }}" alt="Packers" data-team="GB" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_North/vikings.png') }}" alt="Vikings" data-team="MIN" onclick="selectTeam(this)">
+            </div>
+        </div>
+
+        <div class="division">
+            <h2>NFC South</h2>
+            <div class="team-logos">
+                <img src="{{ url_for('static', filename='NFC_South/falcons.png') }}" alt="Falcons" data-team="ATL" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_South/panthers.png') }}" alt="Panthers" data-team="CAR" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_South/saints.png') }}" alt="Saints" data-team="NO" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_South/bucs.png') }}" alt="Buccaneers" data-team="TB" onclick="selectTeam(this)">
+            </div>
+        </div>
+
+        <div class="division">
+            <h2>NFC East</h2>
+            <div class="team-logos">
+                <img src="{{ url_for('static', filename='NFC_East/cowboys.png') }}" alt="Cowboys" data-team="DAL" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_East/eagles.png') }}" alt="Eagles" data-team="PHI" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_East/giants.png') }}" alt="Giants" data-team="NYG" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_East/commanders.png') }}" alt="Commanders" data-team="WAS" onclick="selectTeam(this)">
+            </div>
+        </div>
+
+        <div class="division">
+            <h2>NFC West</h2>
+            <div class="team-logos">
+                <img src="{{ url_for('static', filename='NFC_West/cardinals.png') }}" alt="Cardinals" data-team="ARI" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_West/rams.png') }}" alt="Rams" data-team="LA" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_West/seahawks.png') }}" alt="Seahawks" data-team="SEA" onclick="selectTeam(this)">
+                <img src="{{ url_for('static', filename='NFC_West/49ers.png') }}" alt="49ers" data-team="SF" onclick="selectTeam(this)">
+            </div>
+        </div>
+    </div>
+
+    <div id="output-container"></div>
+    
+    <script>
+        const selectedTeams = [];
+
+        function selectTeam(element) {
+            const team = element.getAttribute('data-team');
+
+            // Check if the team is already selected
+            if (selectedTeams.includes(team)) {
+                alert(`${team} is already selected.`);
+                return;
+            }
+
+            // Add the selected team to the list
+            selectedTeams.push(team);
+            element.style.border = "2px solid blue"; // Highlight selected image
+
+            // If two teams are selected, send the data
+            if (selectedTeams.length === 2) {
+                sendTeamsToFlask();
+            }
+        }
+
+        async function sendTeamsToFlask() {
+            try {
+                const response = await fetch('/fetch-data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ teams: selectedTeams}),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to send teams');
+                }
+
+                const data = await response.json();
+
+                // Display the message from Flask response
+                const outputContainer = document.getElementById('output-container');
+                if (data.message) {
+                    outputContainer.innerText = data.message;
+                } else {
+                    outputContainer.innerText = "Teams sent successfully!";
+                }
+
+                console.log(data); // For debugging, log the repsonse data
+            } catch (error) {
+                console.error("Error sending teams to Flask:", error);
+                document.getElementById('output-container').innerText = 'Error: Unable to send teams. Please try again.';
+            } finally {
+                // Reset the selection
+                selectedTeams.length = 0;
+                document.querySelectorAll("img").forEach(img => {
+                    img.style.border = "none"; // Remove Highlight
+                });
+            }
+        }
+    </script>
+</body>
+</html>
