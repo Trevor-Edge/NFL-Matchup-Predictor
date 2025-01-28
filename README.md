@@ -45,8 +45,11 @@ pip install flask pandas numpy torch scikit-learn nfl_data_py
 3. Ensure all team logos are in the correct directories under `static/`:
 
 static/
+
 ├── AFC_North/
+
 ├── AFC_South/
+
 ├── AFC_East/
 ├── AFC_West/
 ├── NFC_North/
