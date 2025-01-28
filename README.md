@@ -1,6 +1,6 @@
 # NFL Game Predictor
 
-An interactive web application that predicts NFL game outcomes using machine learning. The system analyzes historical play-by-play data and runs 10,000 simulations to generate win predictions for any two NFL teams.
+According to this model, the Eagles will be winning Super Bowl LIX, but how can you bet against the Chiefs???:) This project spins up an interactive web application that predicts NFL game outcomes using machine learning. The system analyzes historical play-by-play data and runs 10,000 simulations to generate win predictions for any two NFL teams.
 
 ## Features
 
