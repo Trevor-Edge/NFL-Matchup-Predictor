@@ -127,4 +127,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgments
 
-- NFL data provided by nfl_data_py
+NFL data provided by nfl_data_py
