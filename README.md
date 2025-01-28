@@ -35,6 +35,7 @@ An interactive web application that predicts NFL game outcomes using machine lea
 1. Clone the repository:
 
 git clone [https://github.com/Trevor-Edge/NFL-Matchup-Predictor.git]
+
 cd nfl-game-predictor
 
 2. Install required Python packages:
