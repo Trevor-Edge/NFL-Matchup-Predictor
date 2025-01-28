@@ -1,6 +1,6 @@
 # NFL Game Predictor
 
-An interactive web application that predicts NFL game outcomes using machine learning. The system analyzes historical play-by-play data and runs 10,000 simulations to generate win probabilities for any two NFL teams.
+An interactive web application that predicts NFL game outcomes using machine learning. The system analyzes historical play-by-play data and runs 10,000 simulations to generate win predictions for any two NFL teams.
 
 ## Features
 
