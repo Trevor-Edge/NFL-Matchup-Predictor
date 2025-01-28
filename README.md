@@ -51,6 +51,7 @@ static/
 ├── AFC_South/
 
 ├── AFC_East/
+
 ├── AFC_West/
 
 ├── NFC_North/
@@ -66,13 +67,21 @@ static/
 ## Project Structure
 
 nfl-game-predictor/
+
 ├── app.py                 # Flask application main file
+
 ├── NFL_pred_functions.py  # ML model and prediction functions
+
 ├── static/               # Static assets
+
 │   ├── style.css        # Main stylesheet
+
 │   └── */               # Team logo directories
+
 ├── templates/           # HTML templates
+
 │   └── index.html      # Main page template
+
 └── README.md
 
 ## Usage
